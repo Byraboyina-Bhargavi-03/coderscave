@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <!-- Add your CSS and JavaScript links here -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Netflix logo, navigation links, and user profile -->
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Featured Movie/TV Show -->
+        <section class="featured">
+            <!-- Movie/TV show details and play button -->
+        </section>
+
+        <!-- Movie/TV Show Categories -->
+        <section class="categories">
+            <!-- Category titles and listings -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content and links -->
+    </footer>
+</body>
+</html>
