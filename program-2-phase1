@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <!-- Add your CSS links here for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Editor Section -->
+    <div class="editor-container">
+        <!-- Code Editor -->
+        <div class="code-editor">
+            <!-- Code Input Area -->
+            <textarea id="code-input" placeholder="Write your code here..."></textarea>
+        </div>
+
+        <!-- Output Section -->
+        <div class="output">
+            <!-- Output Display Area -->
+            <iframe id="output-frame"></iframe>
+        </div>
+    </div>
+
+    <!-- JavaScript for Code Execution -->
+    <script>
+        const codeInput = document.getElementById("code-input");
+        const outputFrame = document.getElementById("output-frame");
+
+        // Function to execute the code in the iframe
+        function executeCode() {
+            const code = codeInput.value;
+            const iframeDocument = outputFrame.contentDocument;
+            iframeDocument.open();
+            iframeDocument.write(code);
+            iframeDocument.close();
+        }
+
+        // Event listener for code execution
+        codeInput.addEventListener("input", executeCode);
+
+        // Initial code execution
+        executeCode();
+    </script>
+</body>
+</html>
